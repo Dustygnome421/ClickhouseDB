@@ -1,0 +1,9 @@
+# Rollup rules for data stored in 1-minute intervals
+1m:10d        # 10 days of 1-minute data
+1h:90d        # 90 days of 1-hour rollups
+1d:5y         # 5 years of 1-day rollups
+
+# Rollup rules for data stored in 5-minute intervals
+5m:7d         # 7 days of 5-minute data
+1h:30d        # 30 days of 1-hour rollups
+1d:5y         # 5 years of 1-day rollups
