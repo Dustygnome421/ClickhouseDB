@@ -1,0 +1,1 @@
+client.execute('INSERT INTO test_table_mt (id, name) VALUES', [(1, 'John'), (2, 'Doe')])
