@@ -1,0 +1,9 @@
+from clickhouse_driver import Client
+
+client = Client(host='localhost')
+
+client.execute('INSERT INTO test_table_mt (id, name) VALUES', [(1, 'John'), (2, 'Doe')])
+client.execute
+
+result = client.execute('SELECT * FROM test_table_mt')
+print(result)

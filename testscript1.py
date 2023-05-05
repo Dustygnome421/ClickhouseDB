@@ -14,7 +14,7 @@ client = Client(host='localhost')
 client.execute('CREATE DATABASE IF NOT EXISTS test')
 
 client.execute('CREATE TABLE IF NOT EXISTS test.merge_tree (device_id UInt32, timestamp DateTime, value UInt32) ENGINE = MergeTree ORDER BY (device_id, timestamp)')
-client.execute('CREATE TABLE IF NOT EXISTS test.graphite_merge_tree (device_id UInt32, timestamp DateTime, value UInt32) ENGINE = GraphiteMergeTree(\'graphite_rollup_rules.txt\') ORDER BY (device_id, timestamp)')
+# client.execute('CREATE TABLE IF NOT EXISTS test.graphite_merge_tree (device_id UInt32, timestamp DateTime, value UInt32) ENGINE = GraphiteMergeTree(\'graphite_rollup_rules.txt\') ORDER BY (device_id, timestamp)')
 
 # data = generate_data(1000)
 
